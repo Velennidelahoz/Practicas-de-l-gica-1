@@ -8,23 +8,19 @@ if (num1 === num2 && num2 === num3) {
     console.log("Los números ingresados son iguales.");
 }
 else if (num1 === num2 || num1 === num3)
-{console.log ("Almenos dos numeros son iguales.");
+{alert ("Almenos dos numeros son iguales.");
 }
 
 else if (num2 === num1 || num2 === num3)
-{console.log ("Almenos dos numeros son iguales.");
+{alert ("Almenos dos numeros son iguales.");
 }
  // identificamos mayor, menor y el centro
 else {
     
     let mayor = Math.max(num1, num2, num3);
-    
     let menor = Math.min(num1, num2, num3);
- 
     let centro = num1 + num2 + num3 - mayor - menor;
 
-  
-    console.log("Números de mayor a menor:", mayor, centro, menor);
-  
-    console.log("Números de menor a mayor:", menor, centro, mayor);
+    alert("Números de mayor a menor:", mayor, centro, menor);
+    alert("Números de menor a mayor:", menor, centro, mayor);
 }
